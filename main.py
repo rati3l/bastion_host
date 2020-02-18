@@ -22,7 +22,7 @@ def main():
 
     else:
       print(config[args.server_name])
-      os.system(f"ssh {ip}")
+      os.system(f"ssh ubuntu@{ip}")
 
 if __name__ == "__main__":    
     main()
