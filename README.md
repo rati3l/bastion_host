@@ -13,7 +13,7 @@ Requires at least python 3.6
 
 ###### AS IS
 run as   
-`./python-ssh yaml_config servername`
+`./python-ssh.py yaml_config servername`  
 
 
 ###### TO DO
