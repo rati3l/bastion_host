@@ -4,7 +4,7 @@
 `python3 -m pip install -r requirements.txt`  
 put py script in PATH  
   
-Requires at least python 3.6  
+**Requires at least python 3.6**  
 
 
 
