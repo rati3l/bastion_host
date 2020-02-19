@@ -1,6 +1,6 @@
 ###### Installation
 
-`chmod +x python-ssh.py`
+`chmod +x python-ssh.py`  
 `python3 -m pip install -r requirements.txt`  
 rename python-ssh.py to something more sensible  
 put py script in PATH  
