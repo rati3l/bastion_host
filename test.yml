@@ -10,3 +10,6 @@ server3:
 server4:
   ip: 192.168.0.4
   bastion: 212.186.105.49
+server5:
+  ip: 127.0.0.1
+  bastion: 1.0.0.127

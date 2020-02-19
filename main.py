@@ -12,17 +12,17 @@ def main():
     args = parser.parse_args()
     
     with open(args.config_file, 'r') as f:
-        config = yaml.load(f)
+        config = yaml.safe_load(f)
   
     try:
-      ip = config[args.server_name]["ip"]
+      bastion_ip, host_ip = config[args.server_name].values()
 
     except KeyError:
       print(f"Server {args.server_name} not found in config file")
 
     else:
-      print(config[args.server_name])
-      os.system(f"ssh ubuntu@{ip}")
+      print(f"Connecting to {args.server_name} - {host_ip} via {bastion_ip}")
+      os.system(f"ssh -A -t ubuntu@{bastion_ip} ssh -A {host_ip}")
 
 if __name__ == "__main__":    
     main()
